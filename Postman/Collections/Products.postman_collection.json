@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "244dc8b0-344c-4e54-b241-7ac6a0f02bbd",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/37356392-244dc8b0-344c-4e54-b241-7ac6a0f02bbd?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "Get all products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{accessToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"refreshToken\": \"{{refreshToken}}\",\r\n  \"expiresInMins\": 30\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/20",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/search?q=phone",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "phone"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Limit and skip products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products?limit=10&skip=10&select=title,price",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "skip",
+							"value": "10"
+						},
+						{
+							"key": "select",
+							"value": "title,price"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products?sortBy=title&order=asc",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "title"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/categories",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get products category list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/category-list",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"category-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get products by a category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/products/category/smartphones",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"category",
+						"smartphones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let title = \"Product_\" + Math.floor(Math.random() * 10000);\r",
+							"pm.environment.set(\"productTitle\", title);\r",
+							"\r",
+							"let res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Product title is correct\", function () {\r",
+							"  pm.expect(res.title).to.eql(pm.environment.get(\"productTitle\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Product ID is returned\", function () {\r",
+							"  pm.expect(res.id).to.not.be.undefined;\r",
+							"  pm.environment.set(\"createdProductId\", res.id);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"HP Zbook\",\r\n  \"description\": \"Test product created via Postman\",\r\n  \"price\": 199.99,\r\n  \"brand\": \"TestBrand\",\r\n  \"category\": \"laptops\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/products/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let updatedTitle = \"UpdatedProduct_\" + Math.floor(Math.random() * 10000);\r",
+							"pm.environment.set(\"updatedProductTitle\", updatedTitle);\r",
+							"\r",
+							"let res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Title updated successfully\", function () {\r",
+							"  pm.expect(res.title).to.eql(pm.environment.get(\"updatedProductTitle\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"ID remains the same\", function () {\r",
+							"  pm.expect(res.id).to.eql(parseInt(pm.environment.get(\"createdProductId\")));\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"HP Zbook G2\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/products/{{createdProductId}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"{{createdProductId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"iphone 15\",\r\n    \"rating\":\"3.5\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/products/{{createdProductId}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"{{createdProductId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

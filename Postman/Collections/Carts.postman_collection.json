@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "fa681cac-ee41-425f-8c09-ceb3214378f9",
+		"name": "Carts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/37356392-fa681cac-ee41-425f-8c09-ceb3214378f9?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "Get all carts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has carts array\", () => {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.carts).to.be.an('array');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/carts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cart has correct ID\", () => {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.id).to.eql(1); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cart has products\", () => {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"products\");\r",
+							"    pm.expect(jsonData.products.length).to.be.above(0);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/carts/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get carts by user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Returned carts belong to correct user\", () => {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"carts\");\r",
+							"    jsonData.carts.forEach(cart => {\r",
+							"        pm.expect(cart.userId).to.eql(5);\r",
+							"    });\r",
+							"});\r",
+							"\r",
+							"pm.test(\"There is at least one cart for user\", () => {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.carts.length).to.be.above(0);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/carts/user/5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Cart has been created with an ID\", () => {\r",
+							"  pm.expect(jsonData).to.have.property(\"id\");\r",
+							"  pm.expect(jsonData.id).to.be.a(\"number\");\r",
+							"  pm.environment.set(\"cartId\", jsonData.id); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cart belongs to correct user\", () => {\r",
+							"  pm.expect(jsonData.userId).to.eql(1); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cart has correct number of products\", () => {\r",
+							"  pm.expect(jsonData.products.length).to.eql(2);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each product has id and quantity\", () => {\r",
+							"  jsonData.products.forEach(p => {\r",
+							"    pm.expect(p).to.have.property(\"id\");\r",
+							"    pm.expect(p).to.have.property(\"quantity\");\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 1,\r\n  \"products\": [\r\n    {\r\n      \"id\": 144,\r\n      \"quantity\": 4\r\n    },\r\n    {\r\n      \"id\": 98,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/carts/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Cart ID is correct\", () => {\r",
+							"  pm.expect(jsonData.id).to.eql(Number(pm.environment.get(\"cartId\")));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cart contains at least 1 product with id = 1\", () => {\r",
+							"  const productIds = jsonData.products.map(p => p.id);\r",
+							"  pm.expect(productIds).to.include(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each product has id and quantity\", () => {\r",
+							"  jsonData.products.forEach(p => {\r",
+							"    pm.expect(p).to.have.property(\"id\");\r",
+							"    pm.expect(p).to.have.property(\"quantity\");\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merge\": true,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/carts/{{cartId}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"{{cartId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Response contains deleted cart with correct ID\", () => {\r",
+							"  pm.expect(jsonData.id).to.eql(Number(pm.environment.get(\"cartId\")));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Cart is marked as deleted\", () => {\r",
+							"  pm.expect(jsonData).to.have.property(\"isDeleted\", true);\r",
+							"  pm.expect(jsonData).to.have.property(\"deletedOn\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/carts/{{cartId}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"{{cartId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

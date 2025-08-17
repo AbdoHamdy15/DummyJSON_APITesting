@@ -1,0 +1,89 @@
+2025-08-17 19:59:28.399 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2024.1\temp-testng-customsuite.xml
+
+2025-08-17 20:05:23.422 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-all.xml
+
+2025-08-17 20:06:09.824 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-17 20:06:09.825 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-17 20:06:10.387 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-17 20:06:10.388 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-17 20:06:10.958 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-17 20:06:10.958 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-17 20:06:11.488 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-17 20:06:11.489 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-17 20:06:12.067 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-17 20:06:12.068 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-17 20:06:12.082 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-17 20:06:12.083 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-17 20:06:12.670 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-17 20:06:12.671 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-17 20:06:12.991 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-17 20:06:12.991 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-17 20:06:13.524 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-17 20:06:13.524 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-17 20:06:14.085 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-17 20:06:14.086 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-17 20:06:14.413 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-17 20:06:14.413 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-17 20:06:14.934 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-17 20:06:14.935 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-17 20:06:14.939 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-17 20:06:14.943 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-17 20:06:14.944 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-17 20:06:15.266 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-17 20:06:15.267 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-17 20:06:15.614 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-17 20:06:15.614 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-17 20:06:15.966 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-17 20:06:15.966 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-17 20:06:16.296 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-17 20:06:16.296 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-17 20:06:16.302 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-17 20:06:16.302 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-17 20:06:16.631 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-17 20:06:16.631 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-17 20:06:16.987 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-17 20:06:16.988 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-17 20:06:17.521 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-17 20:06:17.521 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-17 20:06:18.324 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-17 20:06:18.324 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-17 20:06:18.926 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-17 20:06:18.927 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-17 20:06:19.537 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-17 20:06:19.537 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-17 20:06:19.899 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-17 20:06:19.900 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-17 20:06:19.903 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-17 20:06:19.909 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-17 20:06:19.909 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-17 20:06:20.344 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-17 20:06:20.345 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-17 20:06:20.786 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-17 20:06:20.787 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-17 20:06:21.364 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-17 20:06:21.364 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-17 20:06:21.926 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-17 20:06:21.926 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-17 20:06:22.485 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-17 20:06:22.486 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-17 20:06:22.803 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-17 20:06:22.803 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-17 20:06:22.809 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-17 20:06:22.809 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-17 20:06:23.342 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-17 20:06:23.342 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-17 20:06:23.647 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-17 20:06:23.648 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-17 20:06:23.976 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-17 20:06:23.976 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-17 20:06:24.546 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-17 20:06:24.546 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-17 20:06:24.851 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-17 20:06:24.851 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-17 20:06:25.380 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-17 20:06:25.381 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-17 20:06:25.926 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-17 20:06:25.927 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-17 20:06:25.930 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed

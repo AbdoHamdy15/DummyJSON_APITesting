@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "4cbfdcd7-134c-45d9-9dd7-27da8d265c3d",
+		"name": "Auth (Invalid)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/37356392-4cbfdcd7-134c-45d9-9dd7-27da8d265c3d?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							" pm.test(\"Status code is 400\", function () {\r",
+							"         pm.response.to.have.status(400);\r",
+							"     });"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"emilys\",\r\n  \"password\": \"emilyspass1\",\r\n  \"expiresInMins\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get current auth user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Invalid Token\", function () {\r",
+							"    pm.expect(pm.response.code).to.eql(401);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ajrukagrqwgruqwqw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/auth/me",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh current auth user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Refresh token required\", function () {\r",
+							"    pm.expect(pm.response.code).to.eql(401);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer ararqawrqwrqwrqwrqwrqwrqrqwrq",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/auth/refresh",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

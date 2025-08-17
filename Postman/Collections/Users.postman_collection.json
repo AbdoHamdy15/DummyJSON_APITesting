@@ -1,0 +1,700 @@
+{
+	"info": {
+		"_postman_id": "0af427fb-f0db-4094-bd00-a22d1dc0065a",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/37356392-0af427fb-f0db-4094-bd00-a22d1dc0065a?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Users array exists\", function () {\r",
+							"    let res = pm.response.json();\r",
+							"    pm.expect(res).to.have.property(\"users\");\r",
+							"    pm.expect(res.users).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Default limit is 30 users\", function () {\r",
+							"    let res = pm.response.json();\r",
+							"    pm.expect(res.users.length).to.be.at.most(30);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user and get tokens",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has a token\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"accessToken\");\r",
+							"});\r",
+							"\r",
+							"let jsonData = pm.response.json();\r",
+							"const Token = jsonData.accessToken;\r",
+							"pm.environment.set(\"authToken\", Token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"emilys\",\r\n  \"password\": \"emilyspass\",\r\n  \"expiresInMins\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/user/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get current authenticated user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"User is authenticated\", function () {\r",
+							"  pm.expect(pm.response.code).to.eql(200);\r",
+							"  pm.expect(jsonData).to.have.property(\"username\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{authToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/user/me",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"user",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"User has correct ID\", function () {\r",
+							"    pm.expect(jsonData.id).to.eql(1);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"At least one user has 'John' in name\", function () {\r",
+							"    const found = jsonData.users.some(user => \r",
+							"        user.firstName.includes(\"John\") || \r",
+							"        user.lastName.includes(\"John\") || \r",
+							"        user.username.includes(\"John\")\r",
+							"    );\r",
+							"    pm.expect(found).to.eql(true);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/search?q=John",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "John"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"All users have hair.color = 'Brown'\", () => {\r",
+							"    jsonData.users.forEach(user => {\r",
+							"        pm.expect(user.hair.color).to.eql(\"Brown\");\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/filter?key=hair.color&value=Brown",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "hair.color"
+						},
+						{
+							"key": "value",
+							"value": "Brown"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Limit and skip users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Returned exactly 5 users\", () => {\r",
+							"    pm.expect(jsonData.users.length).to.eql(5);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each user has only 'firstName' and 'age'\", () => {\r",
+							"    jsonData.users.forEach(user => {\r",
+							"        const keys = Object.keys(user);\r",
+							"        pm.expect(keys).to.include(\"firstName\");\r",
+							"        pm.expect(keys).to.include(\"age\");\r",
+							"        pm.expect(keys.length).to.eql(3);\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users?limit=5&skip=10&select=firstName,age",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "skip",
+							"value": "10"
+						},
+						{
+							"key": "select",
+							"value": "firstName,age"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort and Order users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Users are sorted by firstName in ascending order\", () => {\r",
+							"    const names = jsonData.users.map(u => u.firstName);\r",
+							"    const sortedNames = [...names].sort((a, b) => a.localeCompare(b));\r",
+							"    pm.expect(names).to.eql(sortedNames);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users?sortBy=firstName&order=asc",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "firstName"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user's carts by user id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"User carts are returned\", () => {\r",
+							"    pm.expect(jsonData).to.have.property(\"carts\");\r",
+							"    pm.expect(jsonData.carts).to.be.an(\"array\");\r",
+							"    pm.expect(jsonData.carts.length).to.be.greaterThan(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each cart belongs to user with ID 6\", () => {\r",
+							"    jsonData.carts.forEach(cart => {\r",
+							"        pm.expect(cart.userId).to.eql(6);\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/6/carts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"6",
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user's posts by user id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Has posts property\", () => {\r",
+							"  pm.expect(jsonData).to.have.property(\"posts\");\r",
+							"  pm.expect(jsonData.posts).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All posts belong to user 5\", () => {\r",
+							"  jsonData.posts.forEach(post => {\r",
+							"    pm.expect(post.userId).to.eql(5);\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/5/posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"5",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user's todos by user id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Has todos property\", () => {\r",
+							"  pm.expect(jsonData).to.have.property(\"todos\");\r",
+							"  pm.expect(jsonData.todos).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All todos belong to user 5\", () => {\r",
+							"  jsonData.todos.forEach(todo => {\r",
+							"    pm.expect(todo.userId).to.eql(5);\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/5/todos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"5",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"User was added successfully\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"id\");  \r",
+							"    pm.expect(jsonData.firstName).to.eql(\"Abdelrahman\");\r",
+							"    pm.expect(jsonData.lastName).to.eql(\"Hamdy\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Abdelrahman\",\r\n  \"lastName\": \"Hamdy\",\r\n  \"age\": 25,\r\n  \"email\": \"ah1930@fayoum.edu.eg\",\r\n  \"gender\": \"male\",\r\n  \"phone\": \"+1234567890\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"User updated correctly\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.lastName).to.eql(\"Owais\");\r",
+							"    pm.expect(jsonData.age).to.eql(30);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lastName\": \"Owais\",\r\n  \"age\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users/2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"User deleted response is correct\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"isDeleted\", true);\r",
+							"    pm.expect(jsonData).to.have.property(\"id\", 1);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

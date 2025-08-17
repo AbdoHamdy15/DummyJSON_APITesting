@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "299ef388-7d43-4038-90c6-886095c88b30",
+		"name": "Todos (invalid)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/46944925-299ef388-7d43-4038-90c6-886095c88b30?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "invalid get all todos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/todoss",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoss"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get a todo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/todos/-1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todos",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get todo by index",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/todos/user/550",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todos",
+						"user",
+						"550"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid update todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"completed\":\"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/todos/1000",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todos",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid add todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo\":\"'Use DummyJSON in the project'\",\r\n    \"completed\":\"false\",\r\n    \"userId\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/todos/add/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todos",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

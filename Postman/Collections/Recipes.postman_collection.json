@@ -1,0 +1,575 @@
+{
+	"info": {
+		"_postman_id": "2e5b8c03-9330-4336-aedf-c4f7b53007ee",
+		"name": "Recipes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/37356392-2e5b8c03-9330-4336-aedf-c4f7b53007ee?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "Get all recipes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should contain recipes\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.recipes).to.be.an(\"array\").that.is.not.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Pagination default is 30 recipes\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.recipes.length).to.equal(30);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single recipe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Recipe has correct ID\", function () {\r",
+							"    pm.expect(jsonData.id).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipe has required fields\", function () {\r",
+							"    pm.expect(jsonData).to.have.property(\"name\", \"Classic Margherita Pizza\");\r",
+							"    pm.expect(jsonData).to.have.property(\"ingredients\").that.is.an(\"array\").and.is.not.empty;\r",
+							"    pm.expect(jsonData).to.have.property(\"instructions\").that.is.an(\"array\").and.is.not.empty;\r",
+							"    pm.expect(jsonData).to.have.property(\"prepTimeMinutes\");\r",
+							"    pm.expect(jsonData).to.have.property(\"cookTimeMinutes\");\r",
+							"    pm.expect(jsonData).to.have.property(\"servings\");\r",
+							"    pm.expect(jsonData).to.have.property(\"difficulty\", \"Easy\");\r",
+							"    pm.expect(jsonData).to.have.property(\"cuisine\", \"Italian\");\r",
+							"    pm.expect(jsonData).to.have.property(\"rating\");\r",
+							"    pm.expect(jsonData).to.have.property(\"mealType\").that.includes(\"Dinner\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Recipes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has 'recipes' array\", () => {\r",
+							"  pm.expect(res).to.have.property(\"recipes\");\r",
+							"  pm.expect(res.recipes).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each recipe name contains the word 'Margherita'\", () => {\r",
+							"  res.recipes.forEach(r => {\r",
+							"    pm.expect(r.name.toLowerCase()).to.include(\"margherita\");\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes/search?q=Margherita",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Margherita"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Limit and skip recipes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has 'recipes' array\", () => {\r",
+							"  pm.expect(res).to.have.property(\"recipes\");\r",
+							"  pm.expect(res.recipes).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Returned exactly 10 recipes\", () => {\r",
+							"  pm.expect(res.recipes.length).to.eql(10);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each recipe has only 'id', 'name', and 'image'\", () => {\r",
+							"  res.recipes.forEach(r => {\r",
+							"    const keys = Object.keys(r);\r",
+							"    pm.expect(keys).to.include.members(['id', 'name', 'image']);\r",
+							"    pm.expect(keys.length).to.be.at.most(3); // No extra keys\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes?limit=10&skip=10&select=name,image",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "skip",
+							"value": "10"
+						},
+						{
+							"key": "select",
+							"value": "name,image"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort recipes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipes are sorted by name in ascending order\", () => {\r",
+							"  const names = res.recipes.map(r => r.name);\r",
+							"  const sortedNames = [...names].sort((a, b) => a.localeCompare(b));\r",
+							"  pm.expect(names).to.eql(sortedNames);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes?sortBy=name&order=asc",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all recipes tags",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response is an array\", () => {\r",
+							"  pm.expect(res).to.be.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains common tags like 'Pizza' and 'Dessert'\", () => {\r",
+							"  pm.expect(res).to.include(\"Pizza\");\r",
+							"  pm.expect(res).to.include(\"Dessert\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes/tags",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get recipes by a tag",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains recipes array\", () => {\r",
+							"  pm.expect(res).to.have.property(\"recipes\").that.is.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All recipes should contain the tag 'Pakistani'\", () => {\r",
+							"  res.recipes.forEach(recipe => {\r",
+							"    pm.expect(recipe.tags).to.include(\"Pakistani\");\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes/tag/Pakistani",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"tag",
+						"Pakistani"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get recipes by a meal",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains 'recipes' array\", () => {\r",
+							"  pm.expect(res).to.have.property(\"recipes\").that.is.an(\"array\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All recipes are of mealType 'snack'\", () => {\r",
+							"  res.recipes.forEach(recipe => {\r",
+							"    pm.expect(recipe.mealType).to.include('Snack');\r",
+							"  });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/recipes/meal-type/snack",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"meal-type",
+						"snack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Recipe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipe added successfully\", function () {\r",
+							"  const res = pm.response.json();\r",
+							"  pm.expect(res).to.have.property(\"id\");\r",
+							"  pm.expect(res.name).to.eql(\"Tasty Pizza\");\r",
+							"  pm.expect(res.ingredients).to.include(\"Cheese\");\r",
+							"  pm.expect(res.mealType).to.include(\"Dinner\");\r",
+							"});\r",
+							"\r",
+							"let response = pm.response.json();\r",
+							"pm.environment.set(\"recipeId\", response.id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tasty Pizza\",\r\n  \"ingredients\": [\"Cheese\", \"Tomato\"],\r\n  \"prepTimeMinutes\": 15,\r\n  \"cookTimeMinutes\": 20,\r\n  \"servings\": 2,\r\n  \"cuisine\": \"Italian\",\r\n  \"difficulty\": \"Easy\",\r\n  \"caloriesPerServing\": 300,\r\n  \"mealType\": [\"Dinner\"],\r\n  \"tags\": [\"Pizza\", \"Cheesy\", \"Italian\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/recipes/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Recipe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipe name is updated\", function () {\r",
+							"    const res = pm.response.json();\r",
+							"    pm.expect(res.name).to.eql(\"Pizza Chicken Ranch\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipe ID is 1\", function () {\r",
+							"    let res = pm.response.json();\r",
+							"    pm.expect(res.id).to.eql(1);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Pizza Chicken Ranch\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/recipes/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Recipe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipe ID is 1\", function () {\r",
+							"    let res = pm.response.json();\r",
+							"    pm.expect(res.id).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Recipe is marked as deleted\", function () {\r",
+							"    let res = pm.response.json();\r",
+							"    pm.expect(res.isDeleted).to.eql(true);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Pizza Chicken Ranch\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/recipes/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"recipes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Tests Suite" verbose="1">
+
+    <!-- Test Listeners -->
+    <listeners>
+        <listener class-name="test.listeners.AllureTestListener"/>
+    </listeners>
+    
+    <!-- All Tests -->
+    <test name="All Tests">
+        <classes>
+            
+            <!-- User Tests -->
+            <class name="test.UsersTests.ValidUsersTests"/>
+            <class name="test.UsersTests.InvalidUsersTests"/>
+            
+            <!-- Product Tests -->
+            <class name="test.ProductsTests.ValidProductsTests"/>
+            <class name="test.ProductsTests.InvalidProductsTests"/>
+            
+            <!-- Posts Tests -->
+            <class name="test.PostsTests.ValidPostsTests"/>
+            <class name="test.PostsTests.InvalidPostsTests"/>
+            
+            <!-- Todos Tests -->
+            <class name="test.TodosTests.ValidTodoTest"/>
+            <class name="test.TodosTests.InvalidTodoTests"/>
+            
+            <!-- Comments Tests -->
+            <class name="test.CommentTests.ValidCommentsTest"/>
+            <class name="test.CommentTests.InvalidCommentTests"/>
+            
+            <!-- E2E Tests -->
+            <class name="test.e2e.UserE2ETests"/>
+            <class name="test.e2e.ProductE2ETests"/>
+            <class name="test.e2e.ContentE2ETests"/>
+        </classes>
+    </test>
+    
+</suite>

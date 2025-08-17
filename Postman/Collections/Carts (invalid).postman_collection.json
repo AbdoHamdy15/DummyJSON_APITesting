@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "aa477131-f3d9-460d-ace1-701e25c232be",
+		"name": "Carts (invalid)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/37356392-aa477131-f3d9-460d-ace1-701e25c232be?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "Get all carts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/cartz",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"cartz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get cart by user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/carts/user/9999",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"user",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/carts/add",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a cart",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merge\": true,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/carts/19999",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"19999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/carts/9999",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"carts",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

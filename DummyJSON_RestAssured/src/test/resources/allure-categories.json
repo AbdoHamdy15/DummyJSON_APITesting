@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Failed tests",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Broken tests",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "API Tests",
+    "messageRegex": ".*API.*"
+  },
+  {
+    "name": "User Management Tests",
+    "messageRegex": ".*User.*"
+  },
+  {
+    "name": "Product Tests",
+    "messageRegex": ".*Product.*"
+  },
+  {
+    "name": "Critical Tests",
+    "messageRegex": ".*Critical.*"
+  }
+]
+
+

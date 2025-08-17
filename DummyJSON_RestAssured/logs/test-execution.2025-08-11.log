@@ -1,0 +1,1009 @@
+2025-08-11 20:46:13.463 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2024.1\temp-testng-customsuite.xml
+
+2025-08-11 20:46:14.578 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 20:46:14.579 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 20:46:17.335 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 20:46:17.336 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 20:46:17.688 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 20:46:17.689 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 20:46:18.220 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 20:46:18.220 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 20:46:18.767 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 20:46:18.767 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 20:46:18.775 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 20:46:18.776 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 20:46:19.545 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 20:46:19.545 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 20:46:19.887 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 20:46:19.888 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 20:46:20.228 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 20:46:20.228 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 20:46:20.899 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 20:46:20.900 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 20:46:21.456 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 20:46:21.456 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 20:46:22.070 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 20:46:22.071 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 20:46:22.076 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:18:36.647 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2024.1\temp-testng-customsuite.xml
+
+2025-08-11 21:18:37.639 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:18:37.639 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:18:39.619 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:18:39.619 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:18:40.402 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:18:40.403 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:18:40.842 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:18:40.843 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:18:41.339 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:18:41.339 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:18:41.419 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:18:41.419 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:18:43.192 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:18:43.193 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:18:45.094 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:18:45.095 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:18:45.438 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:18:45.439 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:18:45.860 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:18:45.861 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:18:46.188 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:18:46.188 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:18:47.728 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:18:47.728 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:18:47.749 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:20:36.320 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:36.324 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:36.531 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:20:36.533 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:20:38.042 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:20:38.044 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:20:38.067 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:20:38.068 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:20:38.087 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:20:38.088 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:20:38.125 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:20:38.127 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:20:38.168 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:20:38.168 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:20:38.180 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.182 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.182 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.182 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.343 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.345 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.356 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:20:38.357 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:20:38.378 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:20:38.378 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:20:38.404 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:20:38.406 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:20:38.422 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:20:38.422 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:20:38.440 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:20:38.441 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:20:38.452 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:20:38.453 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:20:38.462 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.462 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.463 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:20:38.463 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:45.066 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:45.071 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:45.453 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:21:45.454 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:21:48.425 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:21:48.425 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:21:48.451 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:21:48.451 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:21:48.469 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:21:48.469 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:21:48.495 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:21:48.496 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:21:48.517 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:21:48.518 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:21:48.531 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.532 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.532 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.533 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.670 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.671 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.682 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:21:48.683 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:21:48.701 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:21:48.702 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:21:48.721 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:21:48.724 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:21:48.749 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:21:48.750 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:21:48.769 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:21:48.770 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:21:48.836 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:21:48.836 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:21:48.849 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.850 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.850 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:21:48.850 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:02.372 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-e2e.xml
+
+2025-08-11 21:24:02.415 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:02.415 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:02.720 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:24:02.721 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:24:05.135 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:24:05.135 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:24:05.179 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:24:05.180 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:24:05.195 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:24:05.195 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:24:05.214 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:24:05.214 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:24:05.230 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:24:05.231 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:24:05.242 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.243 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.244 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.244 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.280 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.280 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.288 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:24:05.288 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:24:05.306 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:24:05.307 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:24:05.321 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:24:05.322 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:24:05.334 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:24:05.335 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:24:05.355 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:24:05.356 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:24:05.377 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:24:05.377 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:24:05.394 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.395 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.396 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:05.396 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:15.415 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-e2e.xml
+
+2025-08-11 21:24:15.457 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:15.457 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:15.956 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:24:15.956 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:24:19.188 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:24:19.189 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:24:19.446 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:24:19.446 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:24:19.458 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:24:19.458 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:24:19.561 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:24:19.561 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:24:19.578 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:24:19.578 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:24:19.587 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.588 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.589 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.589 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.623 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.623 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.633 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:24:19.633 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:24:19.651 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:24:19.652 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:24:19.673 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:24:19.673 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:24:19.685 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:24:19.686 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:24:19.701 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:24:19.701 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:24:19.715 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:24:19.716 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:24:19.729 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.730 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.730 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:24:19.730 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:26:21.897 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-e2e.xml
+
+2025-08-11 21:26:22.026 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:26:22.028 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:26:25.581 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:26:25.582 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:26:33.320 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:26:33.321 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:26:34.146 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:26:34.147 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:26:34.526 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:26:34.527 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:26:34.891 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:26:34.891 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:26:35.246 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:26:35.246 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:26:35.697 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:26:35.697 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:26:35.765 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:26:35.772 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:26:36.458 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:26:36.458 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:26:37.682 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:26:37.683 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:26:38.922 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:26:38.923 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:26:38.945 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:26:38.948 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:26:39.668 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:26:39.668 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:26:41.973 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:26:41.974 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:26:41.997 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:26:42.010 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:26:42.010 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:26:42.692 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:26:42.693 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:26:43.257 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:26:43.259 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:26:45.747 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:26:45.752 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:26:46.297 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:26:46.297 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:26:46.630 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:26:46.630 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:26:47.040 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:26:47.041 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:26:47.077 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:26:47.078 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:26:47.221 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:26:47.222 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:26:47.777 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:26:47.778 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:26:47.783 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:26:47.783 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:26:47.960 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:26:47.961 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:26:48.114 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:26:48.114 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:26:48.460 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:26:48.460 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:26:48.680 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:26:48.680 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:26:49.122 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:26:49.123 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:26:49.861 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:26:49.861 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:26:50.671 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:26:50.671 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:26:51.062 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:26:51.062 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:26:51.758 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:26:51.759 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:26:52.564 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:26:52.564 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:26:52.924 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 21:26:52.924 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 21:26:53.445 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:26:53.446 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:26:53.579 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:26:53.590 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:26:53.590 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:26:53.907 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:26:53.908 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:26:54.376 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 21:26:54.376 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 21:26:54.378 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 21:26:54.384 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:26:54.384 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:26:54.719 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 21:26:54.719 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 21:26:55.054 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 21:26:55.055 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 21:26:55.345 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:26:55.345 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:26:55.365 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 21:26:55.365 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 21:26:55.689 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:26:55.690 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:26:56.022 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:26:56.023 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:26:56.030 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:26:56.030 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:26:56.050 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 21:26:56.051 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 21:26:56.422 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 21:26:56.422 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 21:26:56.724 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:26:56.724 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:26:56.734 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 21:26:56.735 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 21:26:56.744 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:26:56.745 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:26:57.051 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 21:26:57.052 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 21:26:57.728 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 21:26:57.728 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 21:26:58.623 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:26:58.623 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:26:59.330 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:26:59.331 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:26:59.425 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 21:26:59.425 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 21:27:00.103 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:27:00.103 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:27:00.104 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 21:27:00.105 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 21:27:00.423 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 21:27:00.423 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 21:27:00.723 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 21:27:00.724 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 21:27:01.045 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 21:27:01.045 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 21:27:01.054 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 21:27:01.055 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:01.055 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:01.056 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:01.056 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:01.540 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:27:01.540 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:27:01.879 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 21:27:01.879 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 21:27:02.223 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 21:27:02.224 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 21:27:02.228 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 21:27:02.242 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:27:02.242 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:27:02.726 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 21:27:02.727 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 21:27:03.477 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 21:27:03.478 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 21:27:03.817 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 21:27:03.818 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 21:27:04.131 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 21:27:04.131 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 21:27:04.840 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 21:27:04.841 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 21:27:05.174 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 21:27:05.174 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 21:27:05.181 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:27:05.182 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:27:05.877 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 21:27:05.877 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 21:27:06.212 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 21:27:06.212 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 21:27:06.912 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 21:27:06.912 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 21:27:09.822 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 21:27:09.823 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 21:27:10.191 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 21:27:10.192 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 21:27:11.147 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 21:27:11.147 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 21:27:11.457 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 21:27:11.457 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 21:27:11.483 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 21:27:11.484 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:11.485 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:11.485 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:27:11.485 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:34:31.826 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-all.xml
+
+2025-08-11 21:34:31.878 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:34:31.878 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:35:28.946 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:35:28.947 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:35:29.261 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:35:29.261 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:35:29.891 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:35:29.891 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:35:30.338 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:35:30.339 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:35:31.200 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:35:31.201 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:35:31.233 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:35:31.233 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:35:31.544 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:35:31.544 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:35:31.847 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:35:31.848 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:35:32.460 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:35:32.461 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:35:32.789 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:35:32.789 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:35:33.103 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:35:33.104 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:35:33.742 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:35:33.742 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:35:33.747 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:35:33.751 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:35:33.752 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:35:34.741 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:35:34.741 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:35:35.056 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:35:35.057 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:35:35.371 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:35:35.371 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:35:35.689 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:35:35.690 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:35:35.699 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:35:35.700 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:35:36.044 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:35:36.045 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:35:36.643 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:35:36.643 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:35:37.322 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:35:37.322 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:35:37.971 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:35:37.971 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:35:38.621 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:35:38.621 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:35:39.264 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 21:35:39.264 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 21:35:39.577 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 21:35:39.577 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 21:35:39.581 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 21:35:39.590 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:35:39.590 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:35:39.896 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 21:35:39.896 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 21:35:40.536 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 21:35:40.536 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 21:35:40.831 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 21:35:40.831 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 21:35:41.451 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 21:35:41.452 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 21:35:42.073 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 21:35:42.074 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 21:35:42.721 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 21:35:42.721 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 21:35:42.727 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:35:42.727 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:35:43.343 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 21:35:43.344 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 21:35:43.982 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 21:35:43.982 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 21:35:44.275 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 21:35:44.275 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 21:35:44.576 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 21:35:44.576 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 21:35:44.874 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 21:35:44.874 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 21:35:45.172 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 21:35:45.173 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 21:35:45.482 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 21:35:45.482 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 21:35:45.487 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 21:35:45.489 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:35:45.489 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:35:45.489 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:35:45.490 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:40:12.292 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-all.xml
+
+2025-08-11 21:40:12.331 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:40:12.331 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:40:57.457 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:40:57.459 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:40:57.784 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:40:57.784 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:40:58.290 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:40:58.291 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:40:58.595 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:40:58.595 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:40:58.905 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:40:58.905 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:40:58.926 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:40:58.927 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:40:59.247 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:40:59.248 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:40:59.772 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:40:59.772 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:41:00.069 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:41:00.069 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:41:00.591 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:41:00.591 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:41:00.889 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:41:00.889 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:41:01.464 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:41:01.464 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:41:01.467 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:41:01.470 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:41:01.470 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:41:01.994 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:41:01.995 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:41:02.308 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:41:02.308 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:41:02.822 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:41:02.822 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:41:03.127 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:41:03.127 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:41:03.131 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:41:03.131 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:41:03.660 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:41:03.661 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:41:04.180 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:41:04.180 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:41:04.700 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:41:04.700 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:41:05.232 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:41:05.232 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:41:05.752 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:41:05.753 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:41:06.058 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 21:41:06.058 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 21:41:06.359 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 21:41:06.359 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 21:41:06.362 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 21:41:06.365 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:41:06.366 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:41:06.683 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 21:41:06.684 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 21:41:07.072 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 21:41:07.072 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 21:41:07.368 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 21:41:07.368 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 21:41:07.667 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 21:41:07.667 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 21:41:07.968 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 21:41:07.968 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 21:41:08.284 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 21:41:08.284 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 21:41:08.358 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:41:08.358 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:41:08.881 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 21:41:08.881 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 21:41:09.389 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 21:41:09.389 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 21:41:09.899 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 21:41:09.899 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 21:41:10.395 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 21:41:10.395 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 21:41:10.692 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 21:41:10.693 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 21:41:10.991 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 21:41:10.992 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 21:41:11.503 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 21:41:11.503 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 21:41:11.505 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 21:41:11.506 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:41:11.506 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:41:11.506 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:41:11.506 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:44:21.023 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:44:21.030 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:46:02.027 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-all.xml
+
+2025-08-11 21:46:02.067 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:46:02.067 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:46:51.953 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:46:51.953 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:46:52.275 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:46:52.276 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:46:52.793 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:46:52.793 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:46:53.324 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:46:53.324 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:46:53.855 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:46:53.855 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:46:53.903 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:46:53.903 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:46:54.307 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:46:54.308 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:46:54.650 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:46:54.651 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:46:54.983 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:46:54.984 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:46:55.306 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:46:55.307 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:46:55.632 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:46:55.633 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:46:56.224 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:46:56.224 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:46:56.230 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:46:56.236 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:46:56.236 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:46:56.575 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:46:56.575 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:46:56.908 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:46:56.909 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:46:57.448 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:46:57.448 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:46:57.986 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:46:57.986 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:46:57.991 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:46:57.992 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:46:58.622 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:46:58.622 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:46:58.945 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:46:58.945 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:46:59.508 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:46:59.508 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:47:00.304 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:47:00.305 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:47:01.019 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:47:01.020 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:47:01.551 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 21:47:01.551 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 21:47:02.077 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 21:47:02.077 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 21:47:02.080 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 21:47:02.086 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:47:02.086 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:47:02.546 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 21:47:02.546 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 21:47:03.150 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 21:47:03.151 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 21:47:03.466 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 21:47:03.466 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 21:47:03.770 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 21:47:03.771 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 21:47:04.310 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 21:47:04.310 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 21:47:04.630 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 21:47:04.630 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 21:47:04.818 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:47:04.818 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:47:05.345 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 21:47:05.345 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 21:47:05.641 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 21:47:05.641 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 21:47:06.154 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 21:47:06.155 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 21:47:06.669 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 21:47:06.669 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 21:47:06.966 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 21:47:06.966 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 21:47:07.261 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 21:47:07.261 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 21:47:07.768 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 21:47:07.768 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 21:47:07.901 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 21:47:07.902 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:47:07.902 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:47:07.902 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:47:07.902 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:50:09.678 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:50:09.694 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:50:57.770 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:50:57.771 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:50:58.103 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:50:58.107 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:50:58.815 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:50:58.815 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:50:59.576 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:50:59.577 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:50:59.886 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:50:59.887 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:50:59.895 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:50:59.896 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:51:00.345 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:51:00.346 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:51:00.865 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:51:00.866 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:51:01.385 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:51:01.385 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:51:01.930 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:51:01.931 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:51:02.463 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:51:02.464 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:51:02.970 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:51:02.970 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:51:02.973 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:51:02.980 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:51:02.980 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:51:03.501 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:51:03.502 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:51:03.812 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:51:03.813 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:51:04.145 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:51:04.146 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:51:04.467 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:51:04.468 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:51:04.473 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:51:04.473 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:51:04.798 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:51:04.798 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:51:05.655 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:51:05.656 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:51:06.751 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:51:06.752 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:51:07.275 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:51:07.276 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:51:07.815 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:51:07.816 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:52:04.593 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:52:04.597 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:52:56.373 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 21:52:56.375 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 21:52:56.701 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 21:52:56.705 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 21:52:57.219 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 21:52:57.220 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 21:52:57.719 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 21:52:57.720 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 21:52:58.246 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 21:52:58.246 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 21:52:58.257 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 21:52:58.257 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 21:52:58.791 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 21:52:58.792 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 21:52:59.099 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 21:52:59.099 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 21:52:59.403 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 21:52:59.403 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 21:52:59.705 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 21:52:59.705 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 21:53:00.031 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 21:53:00.032 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 21:53:00.575 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 21:53:00.575 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 21:53:00.581 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 21:53:00.589 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 21:53:00.589 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 21:53:00.899 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 21:53:00.900 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 21:53:01.451 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 21:53:01.451 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 21:53:01.776 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 21:53:01.776 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 21:53:02.299 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 21:53:02.299 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 21:53:02.304 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 21:53:02.304 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 21:53:02.669 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 21:53:02.670 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 21:53:03.184 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 21:53:03.184 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 21:53:03.503 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 21:53:03.503 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 21:53:03.869 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 21:53:03.869 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 21:53:04.383 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 21:53:04.383 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 21:53:04.923 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 21:53:04.924 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 21:53:05.355 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 21:53:05.355 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 21:53:05.358 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 21:53:05.361 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 21:53:05.361 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 21:53:06.152 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 21:53:06.152 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 21:53:06.847 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 21:53:06.847 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 21:53:07.149 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 21:53:07.150 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 21:53:07.655 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 21:53:07.655 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 21:53:07.950 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 21:53:07.950 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 21:53:08.307 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 21:53:08.307 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 21:53:08.312 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 21:53:08.312 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 21:53:08.618 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 21:53:08.618 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 21:53:09.117 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 21:53:09.117 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 21:53:09.635 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 21:53:09.635 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 21:53:10.177 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 21:53:10.177 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 21:53:10.696 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 21:53:10.697 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 21:53:10.993 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 21:53:10.994 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 21:53:11.511 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 21:53:11.511 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 21:53:11.514 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 21:53:11.515 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:53:11.515 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:53:11.515 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 21:53:11.515 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 22:03:34.982 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-all.xml
+
+2025-08-11 22:03:35.016 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 22:03:35.017 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 22:04:18.046 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 22:04:18.047 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 22:04:18.582 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 22:04:18.582 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 22:04:18.905 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 22:04:18.906 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 22:04:19.430 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 22:04:19.430 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 22:04:19.952 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 22:04:19.953 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 22:04:19.971 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 22:04:19.972 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 22:04:20.502 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 22:04:20.502 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 22:04:20.807 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 22:04:20.807 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 22:04:21.333 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 22:04:21.335 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 22:04:21.658 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 22:04:21.659 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 22:04:22.197 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 22:04:22.198 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 22:04:22.532 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 22:04:22.532 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 22:04:22.539 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 22:04:22.546 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 22:04:22.546 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 22:04:22.852 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 22:04:22.853 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 22:04:23.172 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 22:04:23.172 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 22:04:23.486 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 22:04:23.486 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 22:04:24.006 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 22:04:24.006 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 22:04:24.014 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 22:04:24.015 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 22:04:24.546 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 22:04:24.547 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 22:04:25.079 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 22:04:25.080 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 22:04:25.620 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 22:04:25.620 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 22:04:26.159 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 22:04:26.159 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 22:04:26.461 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 22:04:26.462 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 22:04:27.061 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 22:04:27.061 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 22:04:27.383 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 22:04:27.383 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 22:04:27.386 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 22:04:27.393 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 22:04:27.393 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 22:04:27.914 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 22:04:27.915 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 22:04:28.235 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 22:04:28.236 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 22:04:28.539 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 22:04:28.539 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 22:04:28.847 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 22:04:28.847 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 22:04:29.164 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 22:04:29.165 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 22:04:29.692 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 22:04:29.692 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 22:04:29.701 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 22:04:29.701 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 22:04:30.235 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 22:04:30.235 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 22:04:30.746 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 22:04:30.747 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 22:04:31.047 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 22:04:31.047 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 22:04:31.561 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 22:04:31.562 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 22:04:32.093 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 22:04:32.093 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 22:04:32.397 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 22:04:32.398 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 22:04:32.718 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 22:04:32.718 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 22:04:32.721 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed
+2025-08-11 22:04:32.722 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 22:04:32.722 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 22:04:32.722 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 22:04:32.722 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-08-11 23:40:02.216 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2024.1\temp-testng-customsuite.xml
+
+2025-08-11 23:40:04.531 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 23:40:04.532 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 23:40:08.776 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 23:40:08.777 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 23:40:09.115 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 23:40:09.116 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 23:40:09.656 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 23:40:09.656 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 23:40:10.202 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 23:40:10.202 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 23:40:10.350 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 23:40:10.351 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 23:40:10.947 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 23:40:10.948 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 23:40:11.477 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 23:40:11.478 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 23:40:12.073 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 23:40:12.074 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 23:40:12.554 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 23:40:12.554 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 23:40:13.079 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 23:40:13.080 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 23:40:13.693 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 23:40:13.693 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 23:40:13.702 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 23:40:29.353 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\Newest desktop\ITI Material\DummyJSON_RestAssured\DummyJSON_RestAssured\testng-e2e.xml
+
+2025-08-11 23:40:31.584 [main] INFO  test.e2e.UserE2ETests - === Starting User Data Relationships E2E Test ===
+2025-08-11 23:40:31.587 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting user with ID 1
+2025-08-11 23:40:35.227 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily
+2025-08-11 23:40:35.228 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user's posts
+2025-08-11 23:40:35.790 [main] INFO  test.e2e.UserE2ETests - User has 1 posts
+2025-08-11 23:40:35.791 [main] INFO  test.e2e.UserE2ETests - Step 3: Getting user's todos
+2025-08-11 23:40:36.343 [main] INFO  test.e2e.UserE2ETests - User has 2 todos
+2025-08-11 23:40:36.343 [main] INFO  test.e2e.UserE2ETests - Step 4: Getting user's carts
+2025-08-11 23:40:36.672 [main] INFO  test.e2e.UserE2ETests - User has 0 carts
+2025-08-11 23:40:36.672 [main] INFO  test.e2e.UserE2ETests - === User Data Relationships E2E Test Completed ===
+2025-08-11 23:40:36.827 [main] INFO  test.e2e.UserE2ETests - === Starting User Lifecycle E2E Test ===
+2025-08-11 23:40:36.827 [main] INFO  test.e2e.UserE2ETests - Step 1: Getting all users
+2025-08-11 23:40:37.368 [main] INFO  test.e2e.UserE2ETests - Found 30 users
+2025-08-11 23:40:37.368 [main] INFO  test.e2e.UserE2ETests - Step 2: Getting user with ID 1
+2025-08-11 23:40:37.703 [main] INFO  test.e2e.UserE2ETests - User retrieved: Emily Johnson
+2025-08-11 23:40:37.703 [main] INFO  test.e2e.UserE2ETests - Step 3: Searching for users with 'John'
+2025-08-11 23:40:38.044 [main] INFO  test.e2e.UserE2ETests - Search returned 3 users
+2025-08-11 23:40:38.044 [main] INFO  test.e2e.UserE2ETests - Step 4: Adding new user
+2025-08-11 23:40:38.691 [main] INFO  test.e2e.UserE2ETests - User created with ID: 209
+2025-08-11 23:40:38.691 [main] INFO  test.e2e.UserE2ETests - Step 5: Updating existing user
+2025-08-11 23:40:39.014 [main] INFO  test.e2e.UserE2ETests - User updated successfully
+2025-08-11 23:40:39.015 [main] INFO  test.e2e.UserE2ETests - Step 6: Deleting existing user
+2025-08-11 23:40:39.576 [main] INFO  test.e2e.UserE2ETests - User deleted successfully
+2025-08-11 23:40:39.576 [main] INFO  test.e2e.UserE2ETests - === User Lifecycle E2E Test Completed ===
+2025-08-11 23:40:39.583 [main] INFO  test.e2e.UserE2ETests - User E2E tests cleanup completed
+2025-08-11 23:40:39.589 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Discovery E2E Test ===
+2025-08-11 23:40:39.589 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all product categories
+2025-08-11 23:40:40.142 [main] INFO  test.e2e.ProductE2ETests - Categories retrieved successfully
+2025-08-11 23:40:40.142 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting products with pagination
+2025-08-11 23:40:40.481 [main] INFO  test.e2e.ProductE2ETests - Pagination returned 5 products
+2025-08-11 23:40:40.482 [main] INFO  test.e2e.ProductE2ETests - Step 3: Getting products with sorting
+2025-08-11 23:40:41.029 [main] INFO  test.e2e.ProductE2ETests - Sorting returned 30 products
+2025-08-11 23:40:41.029 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting products with select fields
+2025-08-11 23:40:41.347 [main] INFO  test.e2e.ProductE2ETests - Select fields returned 30 products
+2025-08-11 23:40:41.347 [main] INFO  test.e2e.ProductE2ETests - === Product Discovery E2E Test Completed ===
+2025-08-11 23:40:41.357 [main] INFO  test.e2e.ProductE2ETests - === Starting Product Lifecycle E2E Test ===
+2025-08-11 23:40:41.358 [main] INFO  test.e2e.ProductE2ETests - Step 1: Getting all products
+2025-08-11 23:40:41.919 [main] INFO  test.e2e.ProductE2ETests - Found 30 products
+2025-08-11 23:40:41.920 [main] INFO  test.e2e.ProductE2ETests - Step 2: Getting product with ID 1
+2025-08-11 23:40:42.235 [main] INFO  test.e2e.ProductE2ETests - Product retrieved: Essence Mascara Lash Princess
+2025-08-11 23:40:42.235 [main] INFO  test.e2e.ProductE2ETests - Step 3: Searching for products with 'phone'
+2025-08-11 23:40:42.557 [main] INFO  test.e2e.ProductE2ETests - Search returned 23 products
+2025-08-11 23:40:42.557 [main] INFO  test.e2e.ProductE2ETests - Step 4: Getting smartphone products
+2025-08-11 23:40:42.876 [main] INFO  test.e2e.ProductE2ETests - Found 16 smartphone products
+2025-08-11 23:40:42.876 [main] INFO  test.e2e.ProductE2ETests - Step 5: Adding new product
+2025-08-11 23:40:43.217 [main] INFO  test.e2e.ProductE2ETests - Product created with ID: 195
+2025-08-11 23:40:43.217 [main] INFO  test.e2e.ProductE2ETests - Step 6: Updating existing product
+2025-08-11 23:40:43.537 [main] INFO  test.e2e.ProductE2ETests - Product updated successfully
+2025-08-11 23:40:43.537 [main] INFO  test.e2e.ProductE2ETests - Step 7: Deleting existing product
+2025-08-11 23:40:44.078 [main] INFO  test.e2e.ProductE2ETests - Product deleted successfully
+2025-08-11 23:40:44.079 [main] INFO  test.e2e.ProductE2ETests - === Product Lifecycle E2E Test Completed ===
+2025-08-11 23:40:44.085 [main] INFO  test.e2e.ProductE2ETests - Product E2E tests cleanup completed
+2025-08-11 23:40:44.091 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Discovery E2E Test ===
+2025-08-11 23:40:44.092 [main] INFO  test.e2e.ContentE2ETests - Step 1: Searching for posts with 'love'
+2025-08-11 23:40:44.615 [main] INFO  test.e2e.ContentE2ETests - Posts search completed
+2025-08-11 23:40:44.615 [main] INFO  test.e2e.ContentE2ETests - Step 2: Ordering posts by title
+2025-08-11 23:40:45.194 [main] INFO  test.e2e.ContentE2ETests - Posts ordering completed
+2025-08-11 23:40:45.194 [main] INFO  test.e2e.ContentE2ETests - Step 3: Getting todos for user 5
+2025-08-11 23:40:45.727 [main] INFO  test.e2e.ContentE2ETests - Limited todos retrieved
+2025-08-11 23:40:45.727 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting random todo
+2025-08-11 23:40:46.024 [main] INFO  test.e2e.ContentE2ETests - Random todo retrieved
+2025-08-11 23:40:46.024 [main] INFO  test.e2e.ContentE2ETests - Step 5: Getting limited comments
+2025-08-11 23:40:46.372 [main] INFO  test.e2e.ContentE2ETests - Limited comments retrieved
+2025-08-11 23:40:46.373 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting comments for post 6
+2025-08-11 23:40:46.681 [main] INFO  test.e2e.ContentE2ETests - Comments by post retrieved
+2025-08-11 23:40:46.681 [main] INFO  test.e2e.ContentE2ETests - === Content Discovery E2E Test Completed ===
+2025-08-11 23:40:46.685 [main] INFO  test.e2e.ContentE2ETests - === Starting Content Management E2E Test ===
+2025-08-11 23:40:46.685 [main] INFO  test.e2e.ContentE2ETests - Step 1: Getting all posts
+2025-08-11 23:40:46.985 [main] INFO  test.e2e.ContentE2ETests - Posts retrieved successfully
+2025-08-11 23:40:46.985 [main] INFO  test.e2e.ContentE2ETests - Step 2: Getting post with ID 1
+2025-08-11 23:40:47.284 [main] INFO  test.e2e.ContentE2ETests - Post retrieved successfully
+2025-08-11 23:40:47.284 [main] INFO  test.e2e.ContentE2ETests - Step 3: Adding new post
+2025-08-11 23:40:47.797 [main] INFO  test.e2e.ContentE2ETests - Post added successfully
+2025-08-11 23:40:47.798 [main] INFO  test.e2e.ContentE2ETests - Step 4: Getting all todos
+2025-08-11 23:40:48.100 [main] INFO  test.e2e.ContentE2ETests - Todos retrieved successfully
+2025-08-11 23:40:48.100 [main] INFO  test.e2e.ContentE2ETests - Step 5: Adding new todo
+2025-08-11 23:40:48.626 [main] INFO  test.e2e.ContentE2ETests - Todo added successfully
+2025-08-11 23:40:48.627 [main] INFO  test.e2e.ContentE2ETests - Step 6: Getting all comments
+2025-08-11 23:40:49.129 [main] INFO  test.e2e.ContentE2ETests - Comments retrieved successfully
+2025-08-11 23:40:49.129 [main] INFO  test.e2e.ContentE2ETests - Step 7: Adding new comment
+2025-08-11 23:40:49.661 [main] INFO  test.e2e.ContentE2ETests - Comment added successfully
+2025-08-11 23:40:49.662 [main] INFO  test.e2e.ContentE2ETests - === Content Management E2E Test Completed ===
+2025-08-11 23:40:49.667 [main] INFO  test.e2e.ContentE2ETests - Content E2E tests cleanup completed

@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "32ac82af-4c98-408a-b52f-696859c2d57f",
+		"name": "Quotes (invalid)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37356392",
+		"_collection_link": "https://universal-star-958557.postman.co/workspace/DummyJSON_APITesting_Project~283bdf31-b0c5-4daf-820d-dca647687ef6/collection/46944925-32ac82af-4c98-408a-b52f-696859c2d57f?action=share&source=collection_link&creator=37356392"
+	},
+	"item": [
+		{
+			"name": "invalid delete  request ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"quote\": \"Your heart is the size of an sea. Go find yourself in its hidden depths.\",\r\n            \"author\": \"Rumi\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/quotes/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"quotes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid update request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"quote\": \"Your heart is the size of an sea. Go find yourself in its hidden depths.\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/quotes/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"quotes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid get one qoute",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/qoutes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"qoutes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get qoutes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/qoutesa",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"qoutesa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get quotes randomm",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/quotes/randomm",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"quotes",
+						"randomm"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
